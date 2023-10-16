@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма > Шеншин</title>
+    <link rel="stylesheet" href="form_style.css">
+</head>
+<body>
+<form action="#">
+    <h3>Регистрация пользователя</h3>
+
+    <div>
+        <label for="name">Имя</label>
+        <input name="name" type="text" id="name" placeholder="Иван">
+    </div>
+    <div>
+        <label for="familyname">Фамилия</label>
+        <input name="familyname" type="text" id="familyname" placeholder="Иванов">
+    </div>
+    <div>
+        <label for="email">Почта</label>
+        <input name="email" type="email" id="email" placeholder="example@tstu.ru">
+    </div>
+
+    <div>
+        <label for="birchday">Дата рождения</label>
+        <input name="birchday" type="datetime-local" id="birchday">
+    </div>
+
+    <div>
+        <textarea name="about" placeholder="О себе"></textarea>
+    </div>
+
+
+    <div class="checkboxes">
+        <h3>Тарифный план</h3>
+        <p>
+            <label for="month">Месяц</label>
+            <input type="checkbox" name="plan" id="month" value="month">
+        </p>
+        <p>
+            <label for="three_month">3 месяца</label>
+            <input type="checkbox" name="plan" id="three_month" value="three_month">
+        </p>
+        <p>
+            <label for="twen_month">12 месяцев</label>
+            <input type="checkbox" name="plan" id="twen_month" value="twen_month">
+        </p>
+        <p>
+            <label for="other">Другой вариант</label>
+            <input type="checkbox" name="plan" id="other" value="other">
+        </p>
+    </div>
+
+    <div>
+        <label for="male">Мужской</label>
+        <input type="radio" name="gender" id="male" value="male">
+
+        <label for="female">Женский</label>
+        <input type="radio" name="gender" id="female" value="female">
+    </div>
+
+
+    <div>
+        <button type="submit">Отправить</button>
+    </div>
+</form>
+</body>
+</html>
